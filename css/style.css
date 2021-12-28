@@ -98,7 +98,6 @@ header .navbar a{
 
 header .navbar a:hover{
     letter-spacing: .2rem;
-    color:var(--main-color);
 }
 
 header .follow a{
@@ -194,7 +193,78 @@ header .follow a:hover{
     background-color: rgb(237, 113, 253);
 }
 
-.education .box-container .box{
+    /* education section */
+    .edcn .box-container{
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        gap:2rem;
+        /* margin-left:50px;
+        height:340px;
+        width:800px; */
+        justify-content: space-between;
+        text-align: center;
+        height: 400px;
+
+    }
+    
+    /* year of passing */
+    .edcn .box-container i{
+        display:block;
+        border-radius:20px;
+        height:40px;
+        width: 100px;
+        padding-top: 10px;
+        color: #fff;
+        /* margin:10px 0px 20px 20px; */
+        background: rgb(18, 117, 231);
+    }
+    .edcn .box-container p{
+        color: rgb(155, 26, 142); 
+        margin:5px 5px 0px 5px;
+        font-size: 2rem;
+        font-family:sans-serif;
+    }
+    
+    .edcn .box-container h2,h4{
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    
+    .edcn .box-container #hsc{
+        flex:1;
+        /* background:cyan; */
+        background: linear-gradient(to top ,cyan,violet);
+    }
+    .edcn .box-container #ug{
+        flex:1;
+        background: linear-gradient(to bottom ,cyan,violet);
+        /* background: violet; */
+        /* margin-right: 10px; */
+    }
+    .edcn .box-container #ssc{
+        flex:1;
+       
+        background: linear-gradient(to bottom ,cyan,violet);
+        /* margin-left: 10px; */
+    }
+    /* hover to education divs */
+    .edcn .box-container #hsc:hover{
+         margin:20px 0px 10px 0px;
+        background:cyan;
+       
+    }
+    .edcn .box-container #ssc:hover{
+        margin:20px 0px 10px 10px;
+       background:violet;
+       
+   }
+   .edcn .box-container #ug:hover{
+    margin:20px 10px 3px 0px;
+   background:violet;
+
+}
+/* .education .box-container .box{
     position: relative;
     flex:1 1 33rem;
     border-left: .2rem solid var(--main-color);
@@ -236,7 +306,7 @@ header .follow a:hover{
 
 .education .box-container .box .content h2{
     color:rgb(11, 70, 179);
-}
+} */
 
 .portfolio .box-container{
     display: flex;
